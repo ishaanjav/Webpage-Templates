@@ -12,7 +12,7 @@ To get started, simply download the html files along with the images. Feel free 
 
  [<img src="https://github.com/ishaanjav/Images-for-my-Other-Repostiories/blob/master/Webpage%20Templates/Feedback%20Page.png" width="64%" alt="Feedback Page">](https://github.com/ishaanjav/Webpage-Templates/blob/master/Feedback%20Page.html)
 
-### Login Page
+### Login Pages
 
 <table border="0">
  <tr>
