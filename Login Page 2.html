@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en-US">
+        <!--Initial Web-page design attempt-->
+
+
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Sofia);
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+        @import url(https://fonts.googleapis.com/css?family=Comfortaa);
+        @import url(https://fonts.googleapis.com/css?family=Nunito);
+
+        h1 {
+            color: blue;
+            font-size: 48;
+        }
+
+        p {
+            color: red;
+        }
+
+        div {
+            background-color: whitesmoke
+        }
+
+        .row {
+            font-size: 21px;
+        }
+
+        .buttonRed {
+            background-color: red;
+            /* Red*/
+            border: none;
+            color: white;
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttonRed:hover {
+            background-color: rgba(255, 115, 0, 0.767)
+        }
+
+        .buttonBlue {
+            background-color: rgb(0, 0, 255);
+            border: none;
+            color: white;
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttonBlue:hover {
+            background-color: rgba(38, 0, 255, 0.623)
+        }
+
+            {
+
+            /* might create issues the brackets */
+            .buttonBlue {
+                background-color: #008CBA;
+            }
+
+            /* Blue */
+            .buttonRed {
+                background-color: #f44336;
+            }
+
+            /* Red */
+            .buttonGray {
+                background-color: #e7e7e7;
+                color: black;
+            }
+
+            /* Gray */
+            .buttonBlack {
+                background-color: #555555;
+            }
+
+            /* Black */
+        }
+
+        /* Create four equal columns that floats next to each other */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column25 {
+            float: left;
+            font-weight: bold;
+            width: 15%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column50 {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  50*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 67% that floats next to each other */
+        .column67 {
+            float: left;
+            width: 67%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns   67*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 33% that floats next to each other */
+        .column33 {
+            float: left;
+            width: 33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  33*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 40% that floats next to each other */
+        .column40 {
+            float: left;
+            width: 40%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  40*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 60% that floats next to each other */
+        .column60 {
+            float: left;
+            width: 60%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  60*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 100% that floats next to each other */
+        .column100 {
+            float: left;
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  100*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 75% that floats next to each other  */
+        .column75 {
+            float: left;
+            width: 85%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns   75*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .type {
+            text-align: center;
+            color: #756bea;
+            font-size: 29px;
+        }
+
+
+
+        #column1 {
+            background: #bfbfbf;
+            display: inline-block;
+            width: 76%;
+            float: left;
+        }
+
+        #column2 {
+            background: #bfbfbf;
+            float: left;
+            width: 24%;
+        }
+
+        #background {
+            border: 4px solid #5a5a5a;
+            background: #bfbfbf;
+            width: 530px;
+
+            height: 408px;
+            display: inline-block;
+            border-radius: 65px;
+        }
+
+        #parent {
+            /*text-align: center;*/
+        }
+
+        #signin {
+            background: #83d8ff;
+            width: 62%;
+            margin-left: 35px;
+            margin-top: 40px;
+            box-shadow: 0px 0px 0px 3px #5a5a5a inset;
+        }
+
+        #forgot {
+            display: table;
+            margin-left: 170px;
+            margin-top: -50px;
+            font-size: 18px;
+            color: darkgreen;
+            padding-bottom: 10px;
+        }
+
+        .userImage {
+            width: 50px;
+            margin-top: 15px;
+            border: 2px solid #5a5a5a;
+            background: #9f9f9f;
+            align-content: center;
+            border-radius: 7px;
+            margin-left: -80px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .input {
+            width: 120px;
+            display: inline-block;
+            margin-left: 10px;
+            height: 50px;
+        }
+
+        textarea {
+            border: 2px solid #5a5a5a;
+            resize: none;
+            padding-left: 5px;
+            font-size: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #login {
+            width: 70px;
+            height: 50px;
+            color: #fff;
+            margin-left: 60px;
+            font-size: 20px;
+            background: #179033;
+            border: 2px solid #5a5a5a;
+            display: inline-block;
+            border-radius: 7px;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        #google {
+            margin-left: 5px;
+            height: 50px;
+            color: #fff;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #3096eb;
+            border: 2px solid #5a5a5a;
+            display: inline-block;
+            border-radius: 7px;
+        }
+
+        #remember {
+            margin-left: 0px;
+            width: 17px;
+            height: 17px;
+        }
+
+        input[type=checkbox] {
+            background-color: #a772ed;
+            background: #a7723d;
+            color: #ffffff;
+        }
+
+        #newUser {
+            margin-left: -42px;
+            color: #000;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        #reg {
+            margin-left: -45px;
+            color: #1660d6;
+            margin-top: -10px;
+            font-size: 21px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+        }
+    </style>
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div id="1">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="background-image: linear-gradient(to bottom right, #aacbff , #1872ff);width:100%;">
+            <tr>
+                <td style="margin-left:5px">
+                    <h2 style="font-family: cursive; margin-left: 25px;">Website Name</h2>
+                </td>
+                <td>
+                    <h1 style="margin-left: 10px; color: #06349b;font-family: sans-serif"><u>Login Page</u></h1>
+                </td>
+                <td style="margin-top: 4px" ;>
+                    <form action="/exit_icon.php">
+                        <img style="margin-top: 10px; margin-left: 90px">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 5px ;color: #073396; line-height: 15px;  font-size: 17 px; margin-left: 25px;"> <i> </i></p>
+                </td>
+                <td>
+                    <h1></h1>
+                </td>
+
+            </tr>
+        </table>
+
+
+    </div>
+
+    <div id="parent">
+        <div id="left" style="float: left; width: 45.5%; height: 100%; background-image: url(background.jpg);color: ghostwhite; background-repeat: no-repeat; background-size: cover;">
+            <br><br><br><br><br><br><br>
+            <div style="width: 80%; float: left; background-color: transparent;">
+                <div style="float:right; width:100%;text-align: right;background-color: transparent;">
+                    <h1 style="color: white; font-family:raleway;"><u>Hello there!</u></h1>
+                    <p style="color: #c8e4ff; font-size: 20px;font-family:raleway; margin-left: 140px;">"Welcome to the &lt;name of website&gt; site for ..."</p>
+                    <button style="background-color: #1862a2; border: 3px solid #fff; margin-right: 10px; color:azure;  font-size: 24px; padding-top: 6px; font-family: raleway; padding-bottom: 6px;padding-left: 40px;padding-right: 40px;">Sign Up</button>
+                </div>
+
+            </div>
+            <div style="width: 20%;background-color: transparent;">
+                &nbsp;
+            </div>
+            <br><br><br><br><br><br><br><br><br><br>
+
+        </div>
+
+        <div id="right" style="float: left;width: 54.5%;background-color: #dfeaff;">
+
+            <div style="background-color: transparent;width:80%; margin:auto;">
+                <p style="background-color: transparent;color:#3688f8;font-size:30px;font-family: comfortaa;width:80%;line-height: 50px;"><b>I already have an account</b></p>
+                <p style="margin-top: -20px;color:#727272;font-size: 19px; font-family: nunito;">Log in with your username and password below.</p>
+
+                <div style="border: 3px solid #6482b2; background: #c7e5ff;">
+
+                    <div style="float: left; width: 14%;background-color: transparent;">
+                        <img width="71px;" height="71px;" src="user.png" alt="Username icon" style="margin-left: 5px; margin-top: 3px;" />
+                    </div>
+                    <div style="width:86%; background-color: transparent;">
+                        <p style="color: #21365d; margin-left: 88px; margin-top: 8px;font-size: 20px; font-family: raleway;"><b><u>Username</u></b></p>
+                        <textarea rows="1" columns="50" placeholder="Your username here" style=" margin-top: -16px; padding-top: 7px; background: #ffffff; font-family: raleway; padding-bottom: 7px; margin-left: 7px; width:400px;border 0px solid #fff; "></textarea>
+                    </div>
+
+                </div>
+                <div style="margin-top: -8px; border-bottom: 3px solid #6482b2; border-right: 3px solid #6482b2; border-left: 3px solid #6482b2;background: #c7e5ff;">
+
+                    <div style="float: left; width: 14%;background-color: transparent;">
+                        <img width="71px;" height="70px;" src="password.png" alt="Username icon" style="margin-left: 7px; margin-top: 1px;padding-top: 2px;" />
+                    </div>
+                    <div style="width:86%; background-color: transparent;">
+                        <p style="padding-top: 6px; color: #21365d; margin-left: 88px; margin-top: 8px;font-size: 20px; font-family: raleway;"><b><u>Password</u></b></p>
+                        <textarea rows="1" columns="50" placeholder="Your password here" style=" margin-top: -16px; padding-top: 7px; font-family: raleway;background: #ffffff; padding-bottom: 7px; margin-left: 7px; width:400px;border 0px solid #fff; "></textarea>
+                    </div>
+
+                </div>
+
+
+                <input id="remember" type="checkbox">
+                <p style="font-size: 21px; color: black; display:inline-block; margin-left: 4px; font-family: nunito">Remember me</p>
+                <p style="display: inline-block; float:right;font-size: 21px; color:#3471f8; font-family: nunito; margin-right: 11px;"><u><i>Forgot your password?</i></u></p>
+
+                <br>
+                <button style="background-image:linear-gradient(to bottom right, #c4d3fd, #5293cb); border: 3px solid #4a91ce; margin-right: 10px; color:azure;  font-size: 25px; padding-top: 6px; font-family: raleway; padding-bottom: 6px;padding-left: 40px;padding-right: 40px;margin-top: -10px;">Login</button>
+
+                <br>
+                <p style="margin-left: 1px; color:#537bbc;font-size: 21px;font-family: nunito; display: inline-block;">Or you can log in with</p>
+                <button style="background: #faff8a; border-top: 3px solid #31aa4d; border-bottom: 3px solid #31aa4d; border-right: 3px solid #fa5757;border-left: 3px solid #fa5757; margin-right: 10px; color:#3f82ff;  font-size: 25px; padding-top: 6px; margin-left: 10px;;font-family: raleway; padding-bottom: 6px;padding-left: 35px;padding-right: 35px;"><b>Google</b></button>
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body></html>

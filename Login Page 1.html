@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en-US">
+        <!--Initial Web-page design attempt-->
+
+<head>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 48;
+        }
+
+        p {
+            color: red;
+        }
+
+        div {
+            background-color: rgb(255, 255, 255, 0)
+        }
+
+        .row {
+            font-size: 21px;
+        }
+
+        .buttonRed {
+            background-color: red;
+            /* Red*/
+            border: none;
+            color: white;
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttonRed:hover {
+            background-color: rgba(255, 115, 0, 0.767)
+        }
+
+        .buttonBlue {
+            background-color: rgb(0, 0, 255);
+            border: none;
+            color: white;
+            padding: 8px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buttonBlue:hover {
+            background-color: rgba(38, 0, 255, 0.623)
+        }
+
+            {
+
+            /* might create issues the brackets */
+            .buttonBlue {
+                background-color: #008CBA;
+            }
+
+            /* Blue */
+            .buttonRed {
+                background-color: #f44336;
+            }
+
+            /* Red */
+            .buttonGray {
+                background-color: #e7e7e7;
+                color: black;
+            }
+
+            /* Gray */
+            .buttonBlack {
+                background-color: #555555;
+            }
+
+            /* Black */
+        }
+
+        /* Create four equal columns that floats next to each other */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column25 {
+            float: left;
+            font-weight: bold;
+            width: 15%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column50 {
+            float: left;
+            width: 50%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  50*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 67% that floats next to each other */
+        .column67 {
+            float: left;
+            width: 67%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns   67*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 33% that floats next to each other */
+        .column33 {
+            float: left;
+            width: 33%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  33*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 40% that floats next to each other */
+        .column40 {
+            float: left;
+            width: 40%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  40*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 60% that floats next to each other */
+        .column60 {
+            float: left;
+            width: 60%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  60*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 100% that floats next to each other */
+        .column100 {
+            float: left;
+            width: 100%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns  100*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Create columns 75% that floats next to each other  */
+        .column75 {
+            float: left;
+            width: 85%;
+            padding: 10px;
+        }
+
+        /* Clear floats after the columns   75*/
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .type {
+            text-align: center;
+            color: #756bea;
+            font-size: 29px;
+        }
+
+        p {
+            max-width: 200px;
+        }
+
+        #column1 {
+            background: #bfbfbf;
+            display: inline-block;
+            width: 76%;
+            float: left;
+        }
+
+        #column2 {
+            background: #bfbfbf;
+            float: left;
+            width: 24%;
+        }
+
+        #background {
+            border: 4px solid #5a5a5a;
+            background: #bfbfbf;
+            width: 530px;
+
+            height: 408px;
+            display: inline-block;
+            border-radius: 65px;
+        }
+
+        #parent {
+            text-align: center;
+        }
+
+        #signin {
+            background: #83d8ff;
+            width: 62%;
+            margin-left: 35px;
+            margin-top: 40px;
+            box-shadow: 0px 0px 0px 3px #5a5a5a inset;
+        }
+
+        #forgot {
+            display: table;
+            margin-left: 170px;
+            margin-top: -50px;
+            font-size: 18px;
+            color: darkgreen;
+            padding-bottom: 10px;
+        }
+
+        .userImage {
+            width: 50px;
+            margin-top: 15px;
+            border: 2px solid #5a5a5a;
+            background: #9f9f9f;
+            align-content: center;
+            border-radius: 7px;
+            margin-left: -80px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .input {
+            width: 120px;
+            display: inline-block;
+            margin-left: 10px;
+            height: 50px;
+        }
+
+        textarea {
+            border: 2px solid #5a5a5a;
+            resize: none;
+            padding-left: 5px;
+            font-size: 16px;
+        }
+
+        .login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .login h1 {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        #google {
+            margin-left: 5px;
+            height: 50px;
+            color: #fff;
+            font-size: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background: #3096eb;
+            border: 2px solid #5a5a5a;
+            display: inline-block;
+            border-radius: 7px;
+        }
+
+        #remember {
+            margin-left: -230px;
+            width: 17px;
+            height: 17px;
+        }
+
+        #newUser {
+            margin-left: -42px;
+            color: #000;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        #reg {
+            margin-left: -45px;
+            color: #1660d6;
+            margin-top: -10px;
+            font-size: 21px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+        .btn {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            padding: 4px 10px 4px;
+            margin-bottom: 0;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333333;
+            text-align: center;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            vertical-align: middle;
+            background-color: #f5f5f5;
+            background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+            background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+            background-image: linear-gradient(top, #ffffff, #e6e6e6);
+            background-repeat: repeat-x;
+            filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0);
+            border-color: #e6e6e6 #e6e6e6 #e6e6e6;
+            border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+            border: 1px solid #e6e6e6;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            *margin-left: .3em;
+        }
+
+        .btn:hover,
+        .btn:active,
+        .btn.active,
+        .btn.disabled,
+        .btn[disabled] {
+            background-color: #e6e6e6;
+        }
+
+        .btn-large {
+            padding: 9px 14px;
+            font-size: 15px;
+            line-height: normal;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            color: #333333;
+            text-decoration: none;
+            background-color: #e6e6e6;
+            background-position: 0 -15px;
+            -webkit-transition: background-position 0.1s linear;
+            -moz-transition: background-position 0.1s linear;
+            -ms-transition: background-position 0.1s linear;
+            -o-transition: background-position 0.1s linear;
+            transition: background-position 0.1s linear;
+        }
+
+        .btn-primary,
+        .btn-primary:hover {
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+            color: #ffffff;
+        }
+
+        .btn-primary.active {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .btn-primary {
+            background-color: #4a77d4;
+            background-image: -moz-linear-gradient(top, #6eb6de, #4a77d4);
+            background-image: -ms-linear-gradient(top, #6eb6de, #4a77d4);
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6eb6de), to(#4a77d4));
+            background-image: -webkit-linear-gradient(top, #6eb6de, #4a77d4);
+            background-image: -o-linear-gradient(top, #6eb6de, #4a77d4);
+            background-image: linear-gradient(top, #6eb6de, #4a77d4);
+            background-repeat: repeat-x;
+            filter: progid:dximagetransform.microsoft.gradient(startColorstr=#6eb6de, endColorstr=#4a77d4, GradientType=0);
+            border: 1px solid #3762bc;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            filter: none;
+            background-color: #4a77d4;
+        }
+
+        .btn-block {
+            width: 100%;
+            display: block;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+            background: #092756;
+            background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -moz-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+            background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -webkit-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -webkit-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+            background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -o-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -o-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+            background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), -ms-linear-gradient(top, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), -ms-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+            background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104, 128, 138, .4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25) 0%, rgba(42, 60, 87, .4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E1D6D', endColorstr='#092756', GradientType=1);
+        }
+
+
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 13px;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+            box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.2), 0 1px 1px rgba(255, 255, 255, 0.2);
+            -webkit-transition: box-shadow .5s ease;
+            -moz-transition: box-shadow .5s ease;
+            -o-transition: box-shadow .5s ease;
+            -ms-transition: box-shadow .5s ease;
+            transition: box-shadow .5s ease;
+        }
+
+        input:focus {
+            box-shadow: inset 0 -5px 45px rgba(100, 100, 100, 0.4), 0 1px 1px rgba(255, 255, 255, 0.2);
+        }
+        }
+    </style>
+
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div id="1">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-radius: 22px; border: 2px solid #5d4f8b;width: 900px;">
+            <tr>
+                <td style="margin-left:5px">
+                    <h2 style="margin-left: 15px; color:#d3a9a9; font-family: cursive;">Website Name</h2>
+                </td>
+                <td>
+                    <h1 style="margin-left:12px; color: #c9b0d4;font-family: sans-serif"><u>Login Page</u></h1>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 5px ;color: #adc6ff; line-height: 15px;  font-size: 17 px; margin-left: 15px;"> <i>Slogan </i></p>
+                </td>
+                <td>
+                    <h1></h1>
+                </td>
+
+            </tr>
+        </table>
+
+
+    </div>
+
+    <div style="margin-top: -200px;" class="login">
+        <h1>Sign In</h1>
+        <form method="post">
+            <input type="text" name="u" placeholder="Username" required="required" />
+            <input type="password" name="p" placeholder="Password" required="required" />
+            <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+        </form>
+    </div>
+
+</body></html>
